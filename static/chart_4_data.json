@@ -1,0 +1,42 @@
+export let dwKeys = {
+  State: {
+    "Lending per capita": [
+      { name: "All", key: "kUVyZ" },
+      { name: "Business", key: "eH2y8" },
+      { name: "Micro", key: "gsxwO" },
+      { name: "Commercial", key: "dPz0e" },
+      { name: "Multifamily", key: "p5uHo" },
+      { name: "Single Family", key: "Jpfqd" },
+      { name: "Consumer", key: "oM1wy" }
+    ],
+    "Count per capita": [
+      { name: "All", key: "pPR6C" },
+      { name: "Business", key: "sn7H1" },
+      { name: "Micro", key: "2xD1v" },
+      { name: "Commercial", key: "Fyezi" },
+      { name: "Multifamily", key: "UiGWJ" },
+      { name: "Single Family", key: "Hkrmj" },
+      { name: "Consumer", key: "UpfK1" }
+    ]
+  },
+  MSA: {
+    "Lending per capita": [
+      { name: "All", key: "OVntS" },
+      { name: "Business", key: "DKJZe" },
+      { name: "Micro", key: "udTLU" },
+      { name: "Commercial", key: "3CUpy" },
+      { name: "Multifamily", key: "vght1" },
+      { name: "Single Family", key: "5AIes" },
+      { name: "Consumer", key: "6HOxd" }
+    ],
+    "Count per capita": [
+      { name: "All", key: "5Lmf3" },
+      { name: "Business", key: "PZ2yp" },
+      { name: "Micro", key: "7Prqg" },
+      { name: "Commercial", key: "tL54C" },
+      { name: "Multifamily", key: "zSasx" },
+      { name: "Single Family", key: "ipbCX" },
+      { name: "Consumer", key: "Myy1d" }
+    ]
+  }
+};
