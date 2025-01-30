@@ -28,11 +28,13 @@
   let currentSubtitle = $derived(
     active_name == "Dollars"
       ? active_button + " " + subtitle[0]
-      : "Number of " +
+      : (
+          "Number of " +
           active_button[0].toLowerCase() +
           active_button.substring(1) +
           " " +
           subtitle[1]
+        ).replace("micro loans", "microloans")
   );
 
   let button_names = $derived(

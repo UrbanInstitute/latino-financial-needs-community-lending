@@ -80,6 +80,7 @@
     font-size: var(--font-size-large);
     margin: 0 0 30px 0;
     font-weight: 400;
+    font-style: italic;
   }
 
   .chart-header {

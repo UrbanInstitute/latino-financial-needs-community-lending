@@ -109,14 +109,16 @@
     {:else if blockData.sectionType == "outro"}
       <br /><br />
       <Block width="body"><h2>{blockData.title}</h2></Block>
+      <TextBlock>
+        <BlockQuote text={blockData.quote_text} credit={blockData.quote_credit} />
+      </TextBlock>
+
       {#each blockData.text as block}
         <TextBlock>
           {@html block.value}
         </TextBlock>
       {/each}
       <TextBlock>
-        <BlockQuote text={blockData.quote_text} credit={blockData.quote_credit} />
-        <br />
         {blockData.bullet_intro}
         <ul class="outro-points">
           {#each blockData.bullets as block}

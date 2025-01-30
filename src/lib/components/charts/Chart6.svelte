@@ -3,7 +3,12 @@
   import { BasicDropdown, logClickToGA } from "@urbaninstitute/dataviz-components";
   import { LayerCake, Svg } from "layercake";
   import { scaleBand } from "d3";
-  import { bigDollarFormat, percentFormat, ratioFormat } from "$utils/formats.svelte";
+  import {
+    bigDollarFormat,
+    percentFormat,
+    precisePercentFormat,
+    ratioFormat
+  } from "$utils/formats.svelte";
   import Bar from "$components/chart_parts/Bar.svelte";
   import { urbanColors } from "@urbaninstitute/dataviz-components/utils";
   let {
@@ -59,9 +64,11 @@
   let currentFormat = (chartID) => {
     return ["Median assets", "Median loans outstanding", "Median net income"].includes(chartID)
       ? bigDollarFormat
-      : ["Median net asset ratio", "Median self-sufficiency ratio"].includes(chartID)
+      : chartID == "Median self-sufficiency ratio"
         ? ratioFormat
-        : percentFormat;
+        : chartID == "Median net asset ratio" && active_filter == "Banks"
+          ? precisePercentFormat
+          : percentFormat;
   };
 
   let dropdownData = $derived(filter_names.map((d) => ({ label: d, value: d })));

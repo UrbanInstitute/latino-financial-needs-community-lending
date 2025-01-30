@@ -1,6 +1,9 @@
 export let percentFormat = $state(
   new Intl.NumberFormat("en-US", { style: "percent", maximumFractionDigits: 0 })
 );
+export let precisePercentFormat = $state(
+  new Intl.NumberFormat("en-US", { style: "percent", maximumFractionDigits: 1 })
+);
 export let dollarFormat = $state(
   new Intl.NumberFormat("en-US", {
     style: "currency",

@@ -56,8 +56,8 @@
   <TabGroup group_names={button_names} bind:active_name={active_button} chart_number={5} />
   {#if active_button == "All CDFIs"}
     <div class="legend">
-      <span><span class="box blue"></span>Excluding Puerto Rican CDFIs</span>
       <span><span class="box dark"></span>All</span>
+      <span><span class="box blue"></span>Excluding Puerto Rican CDFIs</span>
     </div>
   {/if}
   <div class="chart-container {active_button == 'Loan funds' ? 'taller' : ''}">
@@ -108,9 +108,9 @@
   }
   .blue {
     background-color: var(--color-blue);
+    margin-left: 12px;
   }
   .dark {
     background-color: var(--color-blue-shade-darkest);
-    margin-left: 12px;
   }
 </style>
